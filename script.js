@@ -133,6 +133,10 @@ document.addEventListener('DOMContentLoaded', () => {
       profileImg.hidden = true;
       profileFallback.hidden = false;
     });
+    profileImg.addEventListener('load', () => {
+      profileImg.hidden = false;
+      profileFallback.hidden = true;
+    });
   }
 
   /* ---------- 7. SCROLL-TO-TOP BUTTON ---------- */
